@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        let pageTitle = 'Title of webpage';
+        let attentionMessage = 'Come Back!';
+        document.addEventListener('visibilitychange', function (e) {
+            var isPageActive = !document.hidden;
+            if (!isPageActive) {
+                document.title = attentionMessage;
+            } else {
+                document.title = pageTitle;
+            }
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
