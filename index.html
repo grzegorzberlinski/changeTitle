@@ -9,7 +9,7 @@
         let pageTitle = 'Title of webpage';
         let attentionMessage = 'Come Back!';
         document.addEventListener('visibilitychange', function (e) {
-            var isPageActive = !document.hidden;
+            let isPageActive = !document.hidden;
             if (!isPageActive) {
                 document.title = attentionMessage;
             } else {
